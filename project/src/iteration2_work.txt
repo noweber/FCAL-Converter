@@ -1,0 +1,22 @@
+Authors:	Nicholas Weber	3408684
+		Amy Le		4520434
+
+Division of Work Statement
+-------------------------------------------------------------------------------------------------------------------------------------
+Makefile:			Jointly assessed the dependency between files and added new targets for the new parser files in lab.
+				Amy fixed some dependency issues in order to make the Makefile run parser_tests properly.			
+
+Fixing Iteration 1 Bugs:	Nick fixed a bug where Scan could return a null list. 
+				Nick fixed a bug where Lexeme allocation size was too small on lexical errors.
+				Nick fixed a bug where lexical error strings were not copied correctly into the lexeme.
+				Jointly fixed bug with stringConst regex.
+				Jointly fixed regexs andOp, orOp, stringKwd, and stringConst to match syntax in sample files.
+
+mysample.dsl:			Amy wrote the FCAL file in lab.
+				Jointly found syntax errors in code when trying to pass parser_tests test case.
+
+New Enums:			Jointly wrote regexs for the new enums Bool, True, and False in lab.
+				Jointly modified files scanner.cpp and scanner.h to accommodate for the newly added enums. 
+
+Testing: 			Jointly reviewed failed test cases from Iteration1 in order to find bugs.
+				Fixed terminal test cases andOp, orOp, and stringKwd in order to accommodate for fixed regexs. 

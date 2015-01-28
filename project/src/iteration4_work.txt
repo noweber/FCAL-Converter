@@ -1,0 +1,41 @@
+Nicholas Weber	3408684
+Amy Le		4520434
+Group Name: LeWeber
+=============================================================================================================
+					ITERATION 4 WORK STATEMENT
+=============================================================================================================
+AST.CPP
+	Jointly went through unparse() functions and implemented them to fit the test cases for iteration 3.
+
+	Jointly wrote a few of the cppCode() functions.
+	
+	While Nicholas was creating the Matrix.cpp file, Amy was working on the remaining cppCode() functions in order
+	to pass the codegeneration_tests. Amy wrote most of the cppCode() functions with debug assistant from Nicholas.
+		
+	Nicholas adjusted cppCode() to properly match test_sample_6 and attempted to fix test_forest_loss_v2 after Matrix.cpp
+	was fully implemented.
+	
+	Amy ensured test_sample_1 through test_sample_8 passed, debugging any issues that arrived in the process.
+	
+PARSER.CPP
+	Nicholas altered the Parser.cpp file in order to create the AST. 
+	
+MATRIX.CPP
+	Nicholas created the Matrix.cpp file.  
+	
+	Jointly designed how the Matrix.cpp methods would be defined including two additional helper functions.
+	
+	Nicholas wrote the Matrix.cpp method definitions, with debugging assistance from Amy.
+	
+ITERATION 3 BUG FIXES
+	Jointly added printf statements in order to locate the bug that was causing a segmentation fault.  (The segmentation
+	fault was not delivered with iteration 3 as it was commented out, but not yet pin-pointed) We discovered that the 
+	bug had to do with an incorrect dynamic_cast to a StdDecl instead of to a Decl. We used the printf statements as 
+	error checking in our unparse() functions to see what was not being created correctly.
+	
+DELIVERY
+	Jointly checked that all necessary files were in the correct locations.
+	
+	Nicholas emailed csci3081-help@cs.umn.edu at approximately 2000 on 20141211 to request iteration 3 test case regrading.
+	
+	Nicholas created the iter4 tag and pushed.

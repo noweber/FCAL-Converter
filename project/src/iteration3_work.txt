@@ -1,0 +1,29 @@
+Names:	Nicholas Weber	3408684
+	Amy Le		4520434
+Group Name:	LeWeber
+=================================================================================
+		       	  ITERATION 3 WORK STATEMENT
+=================================================================================
+PARSER.CPP CHANGES
+	Nicholas added required changes to parser.cpp to accommadate for ast. 
+AST.H CHANGES
+	Amy declared the classes that corresponded to our UML diagrams.
+	Nicholas fixed some bugs pertaining to these classes as well as added more 
+		to classes. 
+AST.CPP CHANGES
+	Amy defined constructors and deconstructors in AST.cpp, as well as added
+		skeletons for the unparse and toCPP functions.
+	Nicholas defined the unparse functions. 
+MAKEFILE CHANGES
+	Jointly added ast_tests.cpp, ast_tests, and AST.o to the Makefile. 
+UML DIAGRAMS
+	We each came up with half the designs of the diagrams for Lab 9.
+	Jointly created a graphical version of our UML diagrams which were 
+		previously hand-drawn for WA2. 
+DOXYGEN COMMENTING
+	Nicholas did most of the Doxygen commenting in AST.h.
+	Amy added comments for some of the the constructors in AST.h as well as
+		cleaned up some comments and removed unnecessary comments.
+	Jointly added the comments in parser.cpp.  
+ITERATION 3 WORK STATEMENT
+	Jointly wrote the work statement. 

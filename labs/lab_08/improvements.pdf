@@ -1,0 +1,109 @@
+Group Name: LeWeber
+
+Members: Nicholas Weber	3408684
+	 Amy Le		4520434
+
+
+	    Write-Up for Lab 08: Improving the Quality of Your Scanner
+
+---------------------------------------------------------------------------------
+				6 potential problems
+---------------------------------------------------------------------------------
+Potential problems NOT found in our code...
+
+1) Duplication in testing code...
+
+Question: Is there any duplication in the testing code you've written to test
+	  individual token regular expressions and the code used by scan?
+
+Answer:	  We did not have to fix this problem because there was no duplication in
+	  our individual token tests and the tests of scan.
+
+
+2) Multiple calls to makeRegex for each tokenType for scanning...
+
+Question: Does your scan function make calls to makeRegex every time it's called?
+	  If so, it is inefficient and what can be done to fix it? 
+
+Answer:   Our implementation only makes calls to makeRegex in the init() function
+	  so we did not have to fix this problem. 
+
+
+Potential problems found in our code...
+The next four problems were fixed by creating a new class RegexNode. This class
+will be used to hold the regex of each enum as well as the corresponding type.
+
+3) Redundant arrays of tokenType values...
+
+Question: Do you have a redundant array of tokenType values? If so, the data in
+	  this array is useless. Why is that?
+
+Answer:   Having this array would be useless because the enum values are numbers.
+	  So we do not need to use an array that will have the values correspond
+	  to the enum value locations in the enum definition.
+	  We originally had a function that would return the enum tokenType that
+	  corresponded to the input integer. We decided that this was not so
+	  useful. In order to fix the problem, we used our class RegexNode. By
+	  using this we are now able to fetch the enum values by calling
+	  regexVector[i].type. 
+
+4) Re-Ordering of TokenEnumType values...
+
+Question: Would changing the order of intKwd and printKwd in the definition of 
+	  enum tokenEnumType in scanner.h have any adverse effect on the rest of
+	  your code? If so, what changes can be made to prevent this?
+
+Answer:   Before, if we were to switch the order of the enums in tokenEnumType we
+	  would have to go back and also switch our code. This was due to having 
+	  a switch statement that returned the enum tokenType when given an int.
+	  Now we use our RegexNode class to assign the regex and a tokenType to
+	  the node. 
+
+5) Named regex_t fields or local variables...
+
+Question: Do you create a named regex_t pointer for each regex instead of only
+	  putting them in an array? Are these necessary? Can we get rid of them?
+
+Answer:	  We were originally using a named regex_t pointer for each regex. We 
+	  determined that this is not necessary and that they could be removed
+	  because we are now using our class RegexVector. Instead of using a 
+	  named variable pointer, we can just look at the enum type that matches
+	  up with the regex. 
+
+6) Use of integer literals in place of tokenType values...
+
+Question: Are there any places in which enumerated tokenType values should be
+	  used instead of integer literals? If so, can you get rid of these?
+
+Answer:   The funciton we had that used to have a switch statement would take in
+	  integers and find the enum type. We removed this function because we
+	  realized that we can just call the enum types instead. So now we have
+	  no occasions where an integer literal is used instead of the tokenType.
+
+---------------------------------------------------------------------------------
+   Description of testing used to ensure the solution implementation is correct
+---------------------------------------------------------------------------------
+We used a black box testing style by using CXX testing. The only test cases we
+had to alter were all of our individual token terminal type tests. This is due to
+our change to our regexVector. It now takes RegexNode instead of regex_t types.
+Our main change to fix all of the problems we were having was to create the class
+RegexNode. This class is used in init(). We tested the solution of using this
+class to fix our problems by referencing our regexVector that called the class.
+---------------------------------------------------------------------------------
+				Division of work
+---------------------------------------------------------------------------------
+6 potential problems checking and fixing...
+	Jointly evaluated the code for the listed problems.
+	Jointly thought of different ways to fix the problems and what needed to
+		be done. By finding these problems, we were able to greatly 
+		shorten the length of our program as well as increase readability
+		of our code. 
+
+Testing description...
+	Jointly found what needed to be fixed in our test cases and what did not
+		need to be. We discovered that the only tests we needed to change
+		were the ones to do with our terminal token types. 
+
+Division of work write-up and lab write-up...
+	Jointly answered the questions in the posed in the lab as well as wording
+		the lab write-up. 

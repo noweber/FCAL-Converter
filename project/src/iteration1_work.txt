@@ -1,0 +1,38 @@
+Authors:	Nicholas Weber	3408684
+		Amy Le		4520434
+
+			Division of Work Statement
+Design:
+	Token Class:	Jointly designed this class during lecture exercises.  The constructor was designed
+			at the start of iteration 1 together.
+	
+	Scanner Class:	Jointly designed this class.  Both members helped design tokenListFromString()
+			which does the bulk of the work helping scan().
+		
+			Jointly designed scan() helper functions appendTokenLists(), init(), getEnum(),
+			getStringLength(), nCharCopy(), and the class constructor.
+	
+			The consumeWhiteSpacesAndComments() function was takent from WordCount.cpp (lab_03)
+
+	Testing:
+			The tests for both classes constructors and helpers were jointly designed.  Both
+			members designed the terminal tests.
+		
+			Amy designed the additional necessary regular expressions.
+
+Implementation:
+	Token Class:	Amy wrote the Token class along with its fields and constructors.
+
+	Scanner Class:	Nicholas wrote Scanner::scan(), helper functions tokenListFromString(),
+			appendTokenLists(), getStringLength(), nCharCopy(), and its constructor.
+			Amy assisted in debugging after base code was established.
+ 
+			Amy wrote the scan() helper functions init() and getEnum()
+	
+	Testing:	Amy wrote the base regular expressions and terminal tests.  
+
+			Nicholas wrote scan() helper function base tests.
+			
+			Other testing was written jointly.  Both members wrote some tests for each of the scan() helper
+			functions generally with both members at the same computer.  Both members contributing in adding
+			terminal tests until all 40 had been completed once the test format had been implemented.
