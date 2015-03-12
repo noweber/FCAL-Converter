@@ -2,4 +2,4 @@ This project was completed using an iterative development process.  It was my se
 
 This program scans the FCAL source to generate a token list using regular expressions.  It then parses the list and builds an abstract syntax tree.  Using the AST, it writes .cpp files.
 
-Additional Notes:  We wrote the files within project/src for the scanner, parser, AST (abstract syntax tree) and automated developed testing for all of them including the regular expressions used. UML diagrams are including to show the class inheritance structure.
+Additional Notes:  We wrote the files within project/src for the scanner, parser, AST (abstract syntax tree) and developed automated testing for all of them including the regular expressions used. UML diagrams are including to show the class inheritance structure.
